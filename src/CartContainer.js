@@ -9,6 +9,7 @@ function CartContainer() {
     <section className="cart">
       <header>
         <h2>Your Bag</h2>
+        <h4 className="empty-cart">is currently empty</h4>
       </header>
 
       <div class="empty-cart">
@@ -18,8 +19,10 @@ function CartContainer() {
       </div>
       <footer>
         <div class="cart-total">
-          <h4>total</h4>
-          <h4>{total}</h4>
+          <h4>
+            total <span>${total}</span>
+          </h4>
+          <h4></h4>
         </div>
         <button className="btn clear-btn" onClick={clearCart}>
           clear cart
